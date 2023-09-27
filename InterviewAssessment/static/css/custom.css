@@ -1,0 +1,28 @@
+body
+{
+background-color:white;
+}
+
+.navbar-light .navbar-brand ,.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.bg-light{
+background-color: Purple!important;
+}
+
+.btn
+{width:200px;}
+
+.login-wrap{
+	position: relative;
+	background: $white;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	h3{
+		font-weight: 700;
+		font-size: 20px;
+		color: $primary;
+	}

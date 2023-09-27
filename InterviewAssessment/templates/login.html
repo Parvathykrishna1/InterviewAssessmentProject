@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3 style="text-align:center;">INTERVIEW CONFIDENCES LEVEL ASSESSMENT</h3>
+<div class="container-fluid">
+    <div style="border:1px solid white;width:30%;height:30%;margin-left:500px;">
+    <h3>LOGIN</h3>
+  <form method="POST" action="{% url 'user_assessment:login' %}" enctype="multipart/form-data" class="form form-center p-2 " style="width:35%">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" name="u" placeholder="Enter Username">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="p" placeholder="Enter password">
+    </div>
+    <div class="mb-3">
+        <center><input type="submit" class="btn btn-primary" value="login"></center>
+    </div>
+      <div>
+          <a href="{% url 'user_assessment:register' %}">New User?</a>
+      </div>
+  </form>
+    </div></div>
+{% endblock %}
